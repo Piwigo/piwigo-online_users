@@ -52,7 +52,7 @@ function online_users_init()
 {
   global $user, $conf;
 
-  // load_language('plugin.lang', SKELETON_PATH);
+  load_language('plugin.lang', ONUS_PATH);
 
   $query = '
 DELETE
@@ -87,7 +87,7 @@ INSERT INTO
   pwg_query($query);
 }
 
-add_event_handler('loc_begin_page_tail', 'online_users_display');
+add_event_handler('loc_end_index', 'online_users_display');
 function online_users_display()
 {
   global $template, $conf;
@@ -114,11 +114,12 @@ SELECT
       $nb_anonymous++;
     }
   }
-
+  
   $template->assign(
     array(
       'ONLINE_USERS_NB_CONNECTED' => count($connected_users),
       'ONLINE_USERS_NB_ANONYMOUS' => $nb_anonymous,
+      'ONUS_PATH' => ONUS_PATH,
     )
   );
 
