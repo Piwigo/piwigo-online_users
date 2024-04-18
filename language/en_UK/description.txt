@@ -1,0 +1,1 @@
+Display the number of logged users and guests, along with a list of user names
