@@ -28,7 +28,6 @@
   height: 70px;
   background-color: #3C3C3C;
   border-radius: 50%;
-  box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,19 +35,20 @@
 
 .info-circle {
   position: absolute;
-  top: 15px;
-  right: 10px;
-  width: 25px;
-  height: 25px;
-  background-color: green;
-  border-radius: 50%;
-  display: flex;
+  top: 30%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  min-width: 25px;
+  min-height: 25px;
+  background-color: #D6FFCF;
+  border-radius: 100px;
   justify-content: center;
   align-items: center;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
-.info-circle span {
+.info-circle-content {
+  padding: 5px;
   color: #5BA250;
   font-size: 12px;
 }
@@ -67,41 +67,6 @@
   overflow: hidden;
 }
 
-.info-circle-open{
-  display: inline-block;
-  width: 25px;
-  height: 25px;
-  background-color: #D6FFCF;
-  border-radius: 50%;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
-
-.info-circle-open span {
-  color: #5BA250;
-  font-size: 12px;
-  vertical-align: sub;
-}
-
-.open-online{
-  display: inline-block;
-  vertical-align: sub;
-  margin-left: 5px;
-}
-
-.open-top-content{
-  text-align: left;
-  margin: 15px 20px;
-}
-
-.open-line{
-  width: 80%;
-  height: 100%;
-  border-bottom: 1px #686868 solid;
-  border-radius: 15px;
-  margin-left: 10%;
-}
-
 .icon-circle-open {
   position: absolute;
   bottom: 15px;
@@ -109,7 +74,6 @@
   height: 140px;
   background-color: #3C3C3C;
   border-radius: 35px;
-  box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -124,8 +88,7 @@
   content: "";
   position: absolute;
   bottom: 0px;
-  right: -37px;
-  width: 2px;
+  right: -34px;
   height: 70px;
   background-color: transparent;
   border-top-left-radius: 35px;
@@ -133,29 +96,8 @@
   box-shadow: 0 -40px 0 0 #3C3C3C;
 }
 
-.open-guests {
-  text-align: left;
-  margin-top: 15px;
-  margin-bottom: 10px;
-}
-
-.open-list {
-  text-align: left;
-  margin-bottom: 10px;
-}
-
-.open-guests span,
-.open-list span{
-  margin-left: 30px;
-}
-
-.open-guests text,
-.open-list text{
-  margin-left: 15px;
-}
-
 .open-user-list {
-  margin-left: 55px;
+  margin-left: 68px;
   width: calc(100% - 75px);
   overflow-y: hidden;
   color: #9E9E9E;
@@ -164,7 +106,7 @@
   line-height: normal;
   letter-spacing: -0.4px;
   text-align: left;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   max-height: 30vh;
   overflow-y: auto;
 }
@@ -176,4 +118,82 @@
 .open-user-list::-webkit-scrollbar-thumb{
   background-color: #FFFFFF;
   border-radius: 5px;
+}
+
+.top-content-container{
+  display: flex;
+  flex-direction: row;
+  margin-right: 20px;
+}
+
+.top-container-number{
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.top-container-text{
+  display: flex;
+  flex-direction: column;
+  width: -webkit-fill-available;
+}
+
+.info-number-circle-badge {
+  display: inline-block;
+  position: relative;
+
+  right:0px;
+  text-align: right;
+  margin: 25px 0px;
+}
+
+.info-circle-badge {
+  padding: 5px 10px;
+  border-radius: 100px;
+  background-color: #D6FFCF;
+  color: #5BA250;
+}
+
+.number-circle-badge {
+  display: inline-block;
+  position: relative;
+  right:0px;
+  text-align: right;
+  margin: 10px 0px;
+}
+
+.circle-badge {
+  padding: 5px 10px;
+  border-radius: 100px;
+  background-color: #686868;
+  color: #FFFFFF;
+}
+
+.number-circle-badge text{
+  text-align:left;
+}
+
+.toptext-right-badge {
+  display: inline-block;
+  position: relative;
+
+  right:0px;
+  text-align: left;
+  margin: 25px 15px;
+}
+
+.text-right-badge {
+  display: inline-block;
+  position: relative;
+  right:0px;
+  text-align: left;
+  margin: 10px 15px;
+}
+
+.open-line{
+  width: 100%;
+  height: 100%;
+  border-bottom: 1px #686868 solid;
+  border-radius: 15px;
+  margin-bottom: 15px;
 }

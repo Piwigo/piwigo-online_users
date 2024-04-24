@@ -4,40 +4,50 @@
 <div class="online-users">
 
     <div class="online-users-open" id="overlay"; style="display: none;">
-
       <div>
-        <div class="open-top-content">
-          <div class="info-circle-open">
-            <span>{$ONLINE_USERS_NB_CONNECTED+$ONLINE_USERS_NB_ANONYMOUS}</span>
-          </div>
-          <div class="open-online">{"Users online"|translate}
-          </div>
+      <div class="top-content-container">
+      <div class="top-container-number">
+        <div class="info-number-circle-badge">
+          <span class="info-circle-badge">{$ONLINE_USERS_NB_CONNECTED+$ONLINE_USERS_NB_ANONYMOUS}</span>
         </div>
-        <div class="open-line">
+        <div class="open-line"></div>
+        <div class="number-circle-badge">
+          <span class="circle-badge">{$ONLINE_USERS_NB_ANONYMOUS}</span>
         </div>
-          <div class="open-guests">
-            <span>{$ONLINE_USERS_NB_ANONYMOUS}</span>
-            <text>{"guests"|translate}</text>
-          </div>
-          {if $ONLINE_USERS_NB_CONNECTED > 0}
-            <div class="open-list">
-              <span>{$ONLINE_USERS_NB_CONNECTED}</span>
-              <text>{"registered users"|translate}</text>
-           </div>
-            <div class="open-user-list">
-              <text>{$ONLINE_USERS_LIST}</text>
-            </div>
-          {/if}
+        {if $ONLINE_USERS_NB_CONNECTED > 0}
+        <div class="number-circle-badge">
+          <span class="circle-badge">{$ONLINE_USERS_NB_CONNECTED}</span>
         </div>
+        {/if}
       </div>
-        {* open/close button *}
+      <div class="top-container-text">
+        <div class="toptext-right-badge">
+          <text>{"Users online"|translate}</text>
+        </div>
+        <div class="open-line"></div>
+        <div class="text-right-badge">
+          <text>{"guests"|translate}</text>
+        </div>
+        {if $ONLINE_USERS_NB_CONNECTED > 0}
+        <div class="text-right-badge">
+          <text>{"registered users"|translate}</text>
+        </div>
+        {/if}
+      </div>
+      </div>
+      {if $ONLINE_USERS_NB_CONNECTED > 0}
+      <div class="open-user-list">
+        <text>{$ONLINE_USERS_LIST}</text>
+      </div>
+      {/if}
+      </div>
+    </div>
         <div class="circle-container">
           <div class="icon-circle" id="icon-circle">
             <img src="plugins/online_users/online-icon.svg" alt="">
           </div>
-
           <div class="info-circle" style="display: flex;" id="infoCircle">
-            <span>{$ONLINE_USERS_NB_CONNECTED+$ONLINE_USERS_NB_ANONYMOUS}</span>
+            <span class="info-circle-content">{$ONLINE_USERS_NB_CONNECTED+$ONLINE_USERS_NB_ANONYMOUS}</span>
           </div>
         </div>
 </div>
