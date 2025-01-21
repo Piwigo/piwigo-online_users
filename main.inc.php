@@ -87,7 +87,7 @@ INSERT INTO
   pwg_query($query);
 }
 
-add_event_handler('loc_end_index', 'online_users_display');
+add_event_handler('loc_begin_page_tail', 'online_users_display');
 function online_users_display()
 {
   global $template, $conf;

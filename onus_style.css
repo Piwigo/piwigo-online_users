@@ -1,4 +1,4 @@
-.online-users {
+#online-users {
   text-align: left;
   margin: 20px;
   max-width: 50%;
@@ -11,7 +11,7 @@
   word-wrap: break-word
 }
 
-.circle-container{
+#online-users .circle-container{
   position: relative;
   width: 100px;
   height: 100px;
@@ -20,7 +20,7 @@
   align-items: center;
 }
 
-.icon-circle{
+#online-users .icon-circle{
   position: absolute;
   bottom: 15px;
   width: 70px;
@@ -32,7 +32,7 @@
   align-items: center;
 }
 
-.info-circle {
+#online-users .info-circle {
   position: absolute;
   top: 30%;
   left: 80%;
@@ -46,13 +46,13 @@
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
-.info-circle-content {
+#online-users .info-circle-content {
   padding: 5px;
   color: #5BA250;
   font-size: 12px;
 }
 
-.online-users-open {
+#online-users .online-users-open {
   position: relative;
   top: 15px;
   right: -15px;
@@ -66,7 +66,7 @@
   overflow: hidden;
 }
 
-.icon-circle-open {
+#online-users .icon-circle-open {
   position: absolute;
   bottom: 15px;
   width: 70px;
@@ -78,12 +78,12 @@
   align-items: center;
 }
 
-.icon-circle img,.icon-circle-open img{
+#online-users .icon-circle img,.icon-circle-open img{
   position:absolute;
   bottom :20px;
 }
 
-.icon-circle-open::before {
+#online-users .icon-circle-open::before {
   content: "";
   position: absolute;
   bottom: 0px;
@@ -95,7 +95,7 @@
   box-shadow: 0 -40px 0 0 #3C3C3C;
 }
 
-.open-user-list {
+#online-users .open-user-list {
   margin-left: 68px;
   width: calc(100% - 75px);
   overflow-y: hidden;
@@ -110,34 +110,34 @@
   overflow-y: auto;
 }
 
-.open-user-list::-webkit-scrollbar{
+#online-users .open-user-list::-webkit-scrollbar{
   width:5px
 }
 
-.open-user-list::-webkit-scrollbar-thumb{
+#online-users .open-user-list::-webkit-scrollbar-thumb{
   background-color: #FFFFFF;
   border-radius: 5px;
 }
 
-.top-content-container{
+#online-users .top-content-container{
   display: flex;
   flex-direction: row;
   margin-right: 20px;
 }
 
-.top-container-number{
+#online-users .top-container-number{
   display: flex;
   flex-direction: column;
   margin-left: 20px;
 }
 
-.top-container-text{
+#online-users .top-container-text{
   display: flex;
   flex-direction: column;
   width: 100%;
 }
 
-.info-number-circle-badge {
+#online-users .info-number-circle-badge {
   display: inline-block;
   position: relative;
 
@@ -146,14 +146,14 @@
   margin: 25px 0px;
 }
 
-.info-circle-badge {
+#online-users .info-circle-badge {
   padding: 5px 10px;
   border-radius: 100px;
   background-color: #D6FFCF;
   color: #5BA250;
 }
 
-.number-circle-badge {
+#online-users .number-circle-badge {
   display: inline-block;
   position: relative;
   right:0px;
@@ -161,18 +161,18 @@
   margin: 10px 0px;
 }
 
-.circle-badge {
+#online-users .circle-badge {
   padding: 5px 10px;
   border-radius: 100px;
   background-color: #686868;
   color: #FFFFFF;
 }
 
-.number-circle-badge text{
+#online-users .number-circle-badge text{
   text-align:left;
 }
 
-.toptext-right-badge {
+#online-users .toptext-right-badge {
   display: inline-block;
   position: relative;
 
@@ -181,7 +181,7 @@
   margin: 25px 15px;
 }
 
-.text-right-badge {
+#online-users .text-right-badge {
   display: inline-block;
   position: relative;
   right:0px;
@@ -189,7 +189,7 @@
   margin: 10px 15px;
 }
 
-.open-line{
+#online-users .open-line{
   width: 100%;
   height: 100%;
   border-bottom: 1px #686868 solid;

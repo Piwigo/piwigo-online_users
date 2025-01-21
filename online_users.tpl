@@ -1,7 +1,7 @@
-{combine_css path=$ONUS_PATH|cat:'style.css'}
+<link rel="stylesheet" type="text/css" href="{$ONUS_PATH}onus_style.css">
 
 {* online-users *}
-<div class="online-users">
+<div id="online-users">
 
     <div class="online-users-open" id="overlay"; style="display: none;">
       <div>
