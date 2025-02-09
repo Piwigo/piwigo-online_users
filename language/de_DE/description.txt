@@ -1,0 +1,1 @@
+Anzeige der Anzahl der angemeldeten Benutzer und Gäste zusammen mit einer Liste der Benutzernamen
