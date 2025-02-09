@@ -1,0 +1,1 @@
+Sýna fjölda innskráðra notenda og gesta, ásamt lista yfir notendanöfn
