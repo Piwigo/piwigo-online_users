@@ -1,0 +1,1 @@
+Toon het aantal aangemelde gebruikers en gasten, samen met een lijst van de gebruikersnamen
