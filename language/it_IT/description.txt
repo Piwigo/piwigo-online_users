@@ -1,0 +1,1 @@
+Mostra il numero di utenti in linea e di ospiti, insieme ad una lista dei nomi utente.
