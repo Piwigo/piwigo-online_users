@@ -1,0 +1,1 @@
+Viser antall loggede brukere og gjester, sammen med en liste over brukernavn
