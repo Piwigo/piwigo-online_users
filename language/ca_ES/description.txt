@@ -1,0 +1,1 @@
+Mostra el nombre d'usuaris connectats i de convidats, junt amb una llista de noms d'usuari
