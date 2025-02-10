@@ -1,0 +1,1 @@
+Zobrazenie počtu prihlásených používateľov a hostí spolu so zoznamom mien používateľov
