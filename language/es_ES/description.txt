@@ -1,0 +1,1 @@
+Muestra el número de usuarios conectados y de invitados, junto con una lista de nombres de usuario
