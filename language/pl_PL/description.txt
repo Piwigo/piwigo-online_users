@@ -1,0 +1,1 @@
+Wyświetla liczbę zalogowanych użytkowników i gości wraz z listą nazw użytkowników.
