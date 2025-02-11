@@ -1,0 +1,1 @@
+Zobrazí počet přihlášených uživatelů a návštěvníků, spolu se seznamem uživatelských jmen
