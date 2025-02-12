@@ -1,0 +1,1 @@
+Prikažite število prijavljenih uporabnikov in gostov skupaj s seznamom uporabniških imen
