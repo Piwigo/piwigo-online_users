@@ -1,0 +1,2 @@
+Exibir o número de utilizadores e convidados ligados bem como uma lista de nomes de utilizadores
+
